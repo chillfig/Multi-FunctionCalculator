@@ -1,1 +1,1 @@
--2.000000 ! = 1.000000
+17.000000 is not an integer between 0 and 16. Ensure that the second integer for bitwise shifts is entered in the range between 0 and 16

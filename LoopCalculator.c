@@ -169,15 +169,15 @@ void printResults(int lcv, float nums[150][150], float results[150], char operat
         {
             if((operators[lcv] == BitAnd || operators[lcv] == BitOr || operators[lcv] == BitLeft || operators[lcv] == BitRight) && (nums[lcv][0] / (int) nums[lcv][0]) != 1)
             {
-                printf("%f is not an integer. Ensure integers are entered for bitwise functions\n", nums[lcv][0]);
+                printf("%f is not an integer.\n", nums[lcv][0]);
             }
             else if((operators[lcv] == BitAnd || operators[lcv] == BitOr || operators[lcv] == BitLeft || operators[lcv] == BitRight) && (nums[lcv][1] / (int) nums[lcv][1] != 1))
             {
-                printf("%f is not an integer. Ensure integers are entered for bitwise functions\n", nums[lcv][1]);
+                printf("%f is not an integer.\n", nums[lcv][1]);
             }
             else if((operators[lcv] == BitLeft || operators[lcv] == BitRight) && ((nums[lcv][1] / (int) nums[lcv][1] != 1) || (nums[lcv][1] < 0 || nums[lcv][1] > 16)))
             {
-                printf("%f is not an integer between 0 and 16. Ensure that the second integer for bitwise shifts is entered in the range between 0 and 16\n", nums[lcv][1]);
+                printf("%f is not an integer between 0 and 16.\n", nums[lcv][1]);
             }
             else
             {
@@ -203,15 +203,15 @@ void writeResults(FILE* writeFile, int lcv, float nums[150][150], float results[
         {
             if((operators[lcv] == BitAnd || operators[lcv] == BitOr || operators[lcv] == BitLeft || operators[lcv] == BitRight) && (nums[lcv][0] / (int) nums[lcv][0]) != 1)
             {
-                fprintf(writeFile, "%f is not an integer. Ensure integers are entered for bitwise functions\n", nums[lcv][0]);
+                fprintf(writeFile, "%f is not an integer.\n", nums[lcv][0]);
             }
             else if((operators[lcv] == BitAnd || operators[lcv] == BitOr || operators[lcv] == BitLeft || operators[lcv] == BitRight) && (nums[lcv][1] / (int) nums[lcv][1] != 1))
             {
-                fprintf(writeFile, "%f is not an integer. Ensure integers are entered for bitwise functions\n", nums[lcv][1]);
+                fprintf(writeFile, "%f is not an integer.\n", nums[lcv][1]);
             }
             else if((operators[lcv] == BitLeft || operators[lcv] == BitRight) && ((nums[lcv][1] / (int) nums[lcv][1] != 1) || (nums[lcv][1] < 0 || nums[lcv][1] > 16)))
             {
-                fprintf(writeFile, "%f is not an integer between 0 and 16. Ensure that the second integer for bitwise shifts is entered in the range between 0 and 16\n", nums[lcv][1]);
+                fprintf(writeFile, "%f is not an integer between 0 and 16.\n", nums[lcv][1]);
             }
             else
             {
